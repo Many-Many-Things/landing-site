@@ -1,1 +1,34 @@
+# OS
 .DS_Store
+
+# ── AI / agent tooling (keep local, never commit) ──────────────────
+# Agent skills & lockfiles
+.agents/
+skills-lock.json
+*.skill
+
+# Claude
+.claude/
+CLAUDE.md
+claude.md
+.mcp.json
+
+# Cursor
+.cursor/
+.cursorrules
+.cursorignore
+
+# GitHub Copilot
+.github/copilot-instructions.md
+
+# Other AI assistants
+.aider*
+.continue/
+.windsurf/
+.windsurfrules
+.codeium/
+.gemini/
+.goose/
+.roo/
+.cline/
+.aiderignore
