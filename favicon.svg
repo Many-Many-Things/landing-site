@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Many Many Things">
+  <rect x="0.5" y="0.5" width="47" height="47" rx="10" fill="#FCFBF8" stroke="#211E1A"/>
+  <!-- row 0 -->
+  <rect x="3" y="3" width="12" height="12" rx="2" fill="#E5542A"/>
+  <circle cx="24" cy="9" r="6" fill="#10968A"/>
+  <rect x="34.32" y="4.32" width="9.36" height="9.36" rx="1.5" fill="#F4A81B" transform="rotate(45 39 9)"/>
+  <!-- row 1 -->
+  <circle cx="9" cy="24" r="4.5" fill="none" stroke="#211E1A" stroke-width="3"/>
+  <polygon points="24,18 18,30 30,30" fill="#C13F18"/>
+  <rect x="33" y="18" width="12" height="12" rx="2" fill="#E5542A"/>
+  <!-- row 2 -->
+  <rect x="4.32" y="34.32" width="9.36" height="9.36" rx="1.5" fill="#F4A81B" transform="rotate(45 9 39)"/>
+  <circle cx="24" cy="39" r="6" fill="#10968A"/>
+  <rect x="33" y="33" width="12" height="12" rx="2" fill="#E5542A"/>
+</svg>
