@@ -1,39 +1,151 @@
 <!DOCTYPE html>
-<html lang="en" data-palette="terracotta" data-font="gabarito" data-grain="on" data-motion="on">
+<html lang="en-GB" data-palette="terracotta" data-font="gabarito" data-grain="on" data-motion="on">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Many Many Things — a little studio making many, many things</title>
-<meta name="description" content="Many Many Things is a studio making software, apps and video games — and offering thoughtful software & AI consultancy." />
+<title>Many Many Things | Software &amp; AI Consultancy, UK</title>
+<meta name="description" content="Many Many Things is a UK software and AI consultancy. We build AI features, automations and GTM engineering, ship web and mobile apps, and give honest, no-hype advice." />
+<meta name="keywords" content="AI consultancy, software and AI consultancy, AI consultancy UK, GTM engineering, go-to-market engineering, AI automation, AI features, RevOps automation, software consultancy, software studio, app development" />
+<meta name="author" content="Many Many Things" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <link rel="canonical" href="https://manymanythings.co.uk/" />
 <meta name="theme-color" content="#E5542A" />
+<meta name="geo.region" content="GB" />
+<meta name="geo.placename" content="United Kingdom" />
 
 <!-- favicon -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="favicon.svg" />
+
+<!-- sitemap -->
+<link rel="sitemap" type="application/xml" href="sitemap.xml" />
 
 <!-- social / open graph -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Many Many Things" />
-<meta property="og:title" content="Many Many Things — a little studio making many, many things" />
-<meta property="og:description" content="A studio making software, apps and video games — and offering thoughtful software & AI consultancy." />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:title" content="Software &amp; AI Consultancy | Many Many Things" />
+<meta property="og:description" content="Practical AI features, automations and software, built by a small UK studio. Honest advice, no hype." />
 <meta property="og:url" content="https://manymanythings.co.uk/" />
 <meta property="og:image" content="https://manymanythings.co.uk/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Many Many Things, software and AI consultancy" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Many Many Things — a little studio making many, many things" />
-<meta name="twitter:description" content="A studio making software, apps and video games — and offering thoughtful software & AI consultancy." />
+<meta name="twitter:title" content="Software &amp; AI Consultancy | Many Many Things" />
+<meta name="twitter:description" content="Practical AI features, automations and software, built by a small UK studio. Honest advice, no hype." />
 <meta name="twitter:image" content="https://manymanythings.co.uk/og-image.png" />
+<meta name="twitter:image:alt" content="Many Many Things, software and AI consultancy" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
+
+<!-- structured data: organization, website, consultancy services -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://manymanythings.co.uk/#organization",
+      "name": "Many Many Things",
+      "url": "https://manymanythings.co.uk/",
+      "logo": "https://manymanythings.co.uk/favicon.svg",
+      "image": "https://manymanythings.co.uk/og-image.png",
+      "email": "contact@manymanythings.co.uk",
+      "description": "Many Many Things is a UK software and AI consultancy and studio. We build practical AI features and automations, ship web and mobile software, and advise teams with honest, no-hype engineering.",
+      "slogan": "A little studio making many, many things.",
+      "foundingDate": "2026",
+      "areaServed": { "@type": "Country", "name": "United Kingdom" },
+      "knowsAbout": ["AI consultancy", "Artificial intelligence", "AI automation", "LLM integration", "GTM engineering", "Go-to-market engineering", "RevOps", "Software development", "Web development", "Mobile app development", "Prototyping"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@manymanythings.co.uk",
+        "contactType": "sales",
+        "areaServed": "GB",
+        "availableLanguage": "English"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://manymanythings.co.uk/#website",
+      "url": "https://manymanythings.co.uk/",
+      "name": "Many Many Things",
+      "inLanguage": "en-GB",
+      "publisher": { "@id": "https://manymanythings.co.uk/#organization" }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://manymanythings.co.uk/#consultancy",
+      "name": "Software & AI consultancy",
+      "serviceType": "AI consultancy",
+      "provider": { "@id": "https://manymanythings.co.uk/#organization" },
+      "areaServed": { "@type": "Country", "name": "United Kingdom" },
+      "description": "Practical software and AI consultancy: AI features and automations, web and mobile software, prototyping and honest advice.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Consultancy services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Product & software", "description": "We design and build web and mobile software with a small, attentive team." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI & automation", "description": "Practical AI features and automations that earn their keep." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Advice & prototyping", "description": "We prototype ideas and help you decide what is worth building." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GTM engineering", "description": "We build the technical side of go-to-market: data pipelines, CRM automation and AI-assisted outbound." } }
+        ]
+      }
+    }
+  ]
+}
+</script>
+
+<!-- structured data: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://manymanythings.co.uk/#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does Many Many Things do?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We're a small UK studio. We make our own apps and games, and we take on software and AI consultancy for other teams. Same people, two hats." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer AI consultancy?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We build practical AI features and automations, the kind that earn their keep rather than make a splash. And we'll tell you honestly when AI isn't the right tool for the job." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is GTM engineering?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It's the technical plumbing behind go-to-market: wiring your CRM and data together so sales and marketing actually run. We build the pipelines and the AI-assisted outbound, then keep them working." }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are you based?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We're in the UK and work remotely. Time zones permitting, we're glad to work with people anywhere." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Email contact@manymanythings.co.uk and tell us what you're chewing on. No brief or deck required. A few sentences is plenty." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends on the work, and we'd rather quote honestly than throw out a number that means nothing. Tell us the shape of the project and we'll come back with something clear." }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <!-- ░░ top ribbon ░░ -->
 <div class="ribbon" aria-hidden="true">
   <div class="ribbon__track" id="ribbon">
-    <span>Many Many Things</span><span>Est. 2026</span><span>Making things with care</span><span>Software · Apps · Games</span><span>Software &amp; AI consultancy</span>
+    <span>Many Many Things</span><span>Est. 2026</span><span>Making things with care</span><span>Apps &amp; games</span><span>Software &amp; AI consultancy</span>
   </div>
 </div>
 
@@ -64,7 +176,7 @@
       <div class="hero__copy">
         <span class="sticker">★ a small studio · est. 2026</span>
         <h1>We make <em>many</em>, <span class="swap">many</span> things.</h1>
-        <p class="lead">Software, apps and video games — built slowly, warmly and with a great deal of care. And when you need a hand, we consult on software &amp; AI too.</p>
+        <p class="lead">Apps and games, built slowly, the way we like them. And when you need a hand, we consult on software &amp; AI too.</p>
         <div class="hero__cta">
           <a class="btn btn--primary" href="#projects">See what we're making →</a>
           <a class="btn" href="#consultancy">Work with us</a>
@@ -98,11 +210,11 @@
         <!-- feature: Sudo Games -->
         <article class="card card--feature reveal">
           <div class="card__art">
-            <div class="ph">sudo games — key art goes here</div>
+            <div class="ph">sudo games key art goes here</div>
           </div>
           <div class="card__body">
             <h3>Sudo Games</h3>
-            <p>A games label for clever, cosy little games — the kind you finish a cup of tea with. Quietly in the workshop now.</p>
+            <p>A games label for clever little games, the kind you finish a cup of tea with. Quietly in the workshop now.</p>
             <div class="card__meta">
               <span class="dot-led"></span>
               <span class="pill pill--soon">Coming soon</span>
@@ -175,28 +287,34 @@
     <div class="wrap">
       <div class="section-head reveal">
         <span class="tag" style="color:var(--primary)">// consultancy</span>
-        <h2>Software &amp; AI, done thoughtfully</h2>
+        <h2>Software &amp; AI consultancy, done thoughtfully</h2>
       </div>
-      <p class="consult__lead reveal">We help teams ship software that feels good to use, and put <b>AI to genuinely practical work</b> — no hype, no magic words. Just careful engineering and honest advice.</p>
+      <p class="consult__lead reveal">We help teams ship software that feels good to use, and put <b>AI to genuinely practical work</b>, minus the magic words. Just careful engineering and honest advice.</p>
 
       <div class="offers">
         <div class="offer reveal">
           <span class="offer__ico"><span class="mark mark--xs"><i class="sq"></i><i class="ci"></i><i class="di"></i><i class="ri"></i></span></span>
           <span class="offer__no">01</span>
           <h3>Product &amp; software</h3>
-          <p>From first sketch to shipped: design, build and ship web and mobile software with a small, attentive team.</p>
+          <p>From first sketch to shipped: we design and build web and mobile software with a small, attentive team.</p>
         </div>
         <div class="offer reveal">
           <span class="offer__ico"><span class="mark mark--xs"><i class="ci"></i><i class="sq"></i><i class="ci"></i><i class="di"></i></span></span>
           <span class="offer__no">02</span>
           <h3>AI &amp; automation</h3>
-          <p>Practical AI features and automations that earn their keep — scoped honestly, built reliably, explained plainly.</p>
+          <p>Practical AI features and automations that earn their keep. We scope them honestly and build them to last.</p>
         </div>
         <div class="offer reveal">
           <span class="offer__ico"><span class="mark mark--xs"><i class="di"></i><i class="ci"></i><i class="sq"></i><i class="ci"></i></span></span>
           <span class="offer__no">03</span>
           <h3>Advice &amp; prototyping</h3>
-          <p>Need a second brain? We'll prototype ideas, pressure-test plans and help you decide what's worth building.</p>
+          <p>Need a second brain? We'll prototype ideas and help you decide what's worth building.</p>
+        </div>
+        <div class="offer reveal">
+          <span class="offer__ico"><span class="mark mark--xs"><i class="tr"></i><i class="di"></i><i class="ci"></i><i class="sq"></i></span></span>
+          <span class="offer__no">04</span>
+          <h3>GTM engineering</h3>
+          <p>We build the technical side of go-to-market: the data plumbing and AI-assisted outbound that earns replies.</p>
         </div>
       </div>
 
@@ -207,12 +325,48 @@
     </div>
   </section>
 
+  <!-- ░░ faq ░░ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">// faq</span>
+        <h2>Questions, answered</h2>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item reveal">
+          <summary>What does Many Many Things do?</summary>
+          <div class="faq__a"><p>We're a small UK studio. We make our own apps and games, and we take on software and AI consultancy for other teams. Same people, two hats.</p></div>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Do you offer AI consultancy?</summary>
+          <div class="faq__a"><p>Yes. We build practical AI features and automations, the kind that earn their keep rather than make a splash. And we'll tell you honestly when AI isn't the right tool for the job.</p></div>
+        </details>
+        <details class="faq__item reveal">
+          <summary>What is GTM engineering?</summary>
+          <div class="faq__a"><p>It's the technical plumbing behind go-to-market: wiring your CRM and data together so sales and marketing actually run. We build the pipelines and the AI-assisted outbound, then keep them working.</p></div>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Where are you based?</summary>
+          <div class="faq__a"><p>We're in the UK and work remotely. Time zones permitting, we're glad to work with people anywhere.</p></div>
+        </details>
+        <details class="faq__item reveal">
+          <summary>How do I get started?</summary>
+          <div class="faq__a"><p>Email <a href="mailto:contact@manymanythings.co.uk">contact@manymanythings.co.uk</a> and tell us what you're chewing on. No brief or deck required. A few sentences is plenty.</p></div>
+        </details>
+        <details class="faq__item reveal">
+          <summary>How much does it cost?</summary>
+          <div class="faq__a"><p>It depends on the work, and we'd rather quote honestly than throw out a number that means nothing. Tell us the shape of the project and we'll come back with something clear.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- ░░ contact ░░ -->
   <section class="contact" id="contact">
     <div class="wrap">
       <span class="mono reveal" style="display:block">// say hello</span>
       <h2 class="reveal">Let's make something.</h2>
-      <p class="sub reveal">Projects, collaborations, consultancy, or just a friendly hello — we read every message.</p>
+      <p class="sub reveal">Projects, collaborations, consultancy, or just a friendly hello. We read every message.</p>
       <div class="email-card reveal">
         <a class="email" href="mailto:contact@manymanythings.co.uk">contact@manymanythings.co.uk</a>
         <button class="btn btn--sm copy-btn" id="copyBtn" type="button">
@@ -232,7 +386,7 @@
         <span class="mark mark--xs"><i class="sq"></i><i class="ci"></i><i class="di"></i><i class="ri"></i><i class="tr"></i><i class="sq"></i><i class="di"></i><i class="ci"></i><i class="sq"></i></span>
         <span class="brand__name">Many <b>Many</b> Things</span>
       </span>
-      <p class="foot__tag">A little studio making many, many things.<br />© <span id="year">2026</span> Many Many Things — made with care.</p>
+      <p class="foot__tag">A little studio making many, many things.<br />© <span id="year">2026</span> Many Many Things. Made with care.</p>
     </div>
     <div class="foot__right">
       <span class="counter">you are visitor no. <b id="visitorCount">00,001</b></span>

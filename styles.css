@@ -379,7 +379,7 @@ section { position: relative; }
 .consult { padding: clamp(48px, 7vw, 92px) 0; background: var(--bg-2); border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); }
 .consult__lead { max-width: 56ch; font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.45; margin: 0 0 44px; }
 .consult__lead b { color: var(--primary); font-weight: 800; }
-.offers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.offers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 @media (max-width: 800px) { .offers { grid-template-columns: 1fr; } }
 .offer { background: var(--card); border: 2px solid var(--ink); border-radius: 16px; padding: 26px 24px; display: flex; flex-direction: column; gap: 12px; box-shadow: 4px 4px 0 color-mix(in oklab, var(--ink), transparent 88%); }
 .offer__no { font-family: var(--font-mono); font-size: 0.74rem; color: var(--primary); letter-spacing: 0.1em; }
@@ -457,6 +457,44 @@ section { position: relative; }
 .foot__links { display: flex; gap: 16px; }
 .foot__links a { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: color-mix(in oklab, var(--bg), transparent 25%); }
 .foot__links a:hover { color: var(--accent); }
+
+/* ---- FAQ ---- */
+.faq { padding: clamp(40px, 6vw, 80px) 0; }
+.faq__list { display: flex; flex-direction: column; gap: 14px; max-width: 820px; }
+.faq__item {
+  background: var(--card);
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 4px 4px 0 color-mix(in oklab, var(--ink), transparent 88%);
+  overflow: hidden;
+}
+.faq__item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 22px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.12rem;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after {
+  content: "+";
+  font-family: var(--font-mono);
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--primary);
+  transition: transform 0.2s var(--ease);
+}
+.faq__item[open] summary::after { transform: rotate(45deg); }
+:root[data-motion="off"] .faq__item summary::after { transition: none; }
+.faq__a { padding: 0 22px 20px; }
+.faq__a p { margin: 0; color: var(--ink-soft); font-size: 1rem; line-height: 1.6; }
+.faq__a a { color: var(--primary); font-weight: 700; }
 
 /* reveal on scroll */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
