@@ -95,6 +95,31 @@
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GTM engineering", "description": "We build the technical side of go-to-market: data pipelines, CRM automation and AI-assisted outbound." } }
         ]
       }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://manymanythings.co.uk/#sudogames",
+      "name": "Sudo Games",
+      "url": "https://manymanythings.co.uk/#sudogames",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "iOS, Android",
+      "description": "A cosy collection of board-game classics for iOS and Android — chess, backgammon, Yacht dice, Ludo and more — each with a near-infinite cast of characterful companions to play against, all offline.",
+      "image": "https://manymanythings.co.uk/assets/sudo-banner.png",
+      "publisher": { "@id": "https://manymanythings.co.uk/#organization" },
+      "creator": { "@id": "https://manymanythings.co.uk/#organization" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://manymanythings.co.uk/#moonpoker",
+      "name": "MoonPoker",
+      "url": "https://manymanythings.co.uk/#moonpoker",
+      "applicationCategory": "BusinessApplication",
+      "applicationSuite": "Atlassian Jira",
+      "operatingSystem": "Atlassian Jira (Forge)",
+      "description": "Inline planning poker inside a Jira issue. Teams vote on story points, reveal together, and the estimate lands straight back on the ticket — no extra tools, no separate meeting.",
+      "image": "https://manymanythings.co.uk/assets/moonpoker-banner.png",
+      "publisher": { "@id": "https://manymanythings.co.uk/#organization" },
+      "creator": { "@id": "https://manymanythings.co.uk/#organization" }
     }
   ]
 }
@@ -168,17 +193,27 @@
 
       <div class="grid">
         <!-- feature: Sudo Games -->
-        <article class="card card--feature reveal">
-          <div class="card__art">
-            <div class="ph">sudo games key art goes here</div>
+        <article class="card card--feature reveal" id="sudogames">
+          <div class="card__art sg-art">
+            <img src="assets/sudo-banner.png" alt="Sudo Games key art — the yellow Sudo Games mark and a cluster of board-game tiles (chess, connect four, dice, ludo, snakes &amp; ladders, backgammon) on a starry plum night sky" />
           </div>
           <div class="card__body">
-            <h3>Sudo Games</h3>
-            <p>A games label for clever little games, the kind you finish a cup of tea with. Quietly in the workshop now.</p>
+            <div class="sg-head">
+              <span class="sg-logo" aria-hidden="true">
+                <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M 814 215 Q 814 129 710 129 L 336 129 Q 210 129 210 259 Q 210 389 336 389 L 710 389 Q 814 389 814 495 Q 814 625 710 625 L 336 625 Q 210 625 210 755 Q 210 885 336 885" fill="none" stroke="#1B1430" stroke-width="172" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M 814 215 Q 814 129 710 129 L 336 129 Q 210 129 210 259 Q 210 389 336 389 L 710 389 Q 814 389 814 495 Q 814 625 710 625 L 336 625 Q 210 625 210 755 Q 210 885 336 885" fill="none" stroke="#E8C36A" stroke-width="132" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="548" cy="886" r="74" fill="#C77A7E" stroke="#1B1430" stroke-width="22"/>
+                  <ellipse cx="530" cy="864" rx="22" ry="11" fill="#FFFCF2" opacity="0.65"/>
+                </svg>
+              </span>
+              <h3>Sudo Games</h3>
+            </div>
+            <p>Our games app — a cosy little collection of board-game classics for iOS &amp; Android. Chess, Backgammon, Yacht Dice, Ludo and more, each with a near-infinite cast of characterful companions to play against, all offline.</p>
             <div class="card__meta">
               <span class="dot-led"></span>
               <span class="pill pill--soon">Coming soon</span>
-              <span class="mono">label · games</span>
+              <span class="mono">ios &amp; android · board games</span>
             </div>
           </div>
         </article>
@@ -198,17 +233,23 @@
           </div>
         </article>
 
-        <!-- half: tool -->
-        <article class="card card--half reveal">
-          <div class="card__art">
-            <div class="ph">tool / experiment</div>
+        <!-- half: MoonPoker (Atlassian Forge plugin) -->
+        <article class="card card--half reveal" id="moonpoker">
+          <div class="card__art mp-art">
+            <img src="assets/moonpoker-banner.png" alt="MoonPoker — planning poker running inside a Jira issue: vote cards and a revealed result under a crescent moon" />
           </div>
           <div class="card__body">
-            <h3>A tiny tool or two</h3>
-            <p>Small software experiments we build for ourselves and share when they're worth sharing.</p>
+            <div class="mp-head">
+              <span class="mp-logo" aria-hidden="true">
+                <span class="vcard"><i class="pip pip--tl"></i><i class="cres"></i><i class="pip pip--br"></i></span>
+              </span>
+              <h3>MoonPoker</h3>
+            </div>
+            <p>Inline planning poker, right inside a Jira issue. The team votes on story points, reveals together, and the estimate lands straight back on the ticket — no extra tools, no separate meeting.</p>
             <div class="card__meta">
-              <span class="pill pill--idea">In the works</span>
-              <span class="mono">software</span>
+              <span class="dot-led" style="background:var(--secondary);box-shadow:0 0 0 3px color-mix(in oklab,var(--secondary),transparent 70%)"></span>
+              <span class="pill pill--live">Live</span>
+              <span class="mono">jira plugin · atlassian forge</span>
             </div>
           </div>
         </article>
