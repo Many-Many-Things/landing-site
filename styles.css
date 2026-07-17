@@ -357,6 +357,9 @@ section { position: relative; }
 .card__body p { margin: 0; color: var(--ink-soft); font-size: 0.98rem; line-height: 1.5; }
 .card__meta { display: flex; align-items: center; gap: 10px; margin-top: auto; padding-top: 12px; }
 
+.card__link { font-weight: 700; color: var(--primary); text-decoration: none; }
+.card__link:hover { text-decoration: underline; }
+
 .pill {
   font-family: var(--font-mono);
   font-size: 0.66rem;
