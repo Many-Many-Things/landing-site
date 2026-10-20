@@ -1,8 +1,7 @@
 # Many Many Things — landing site
 
-A warm, cozy, tasteful-2000s studio landing site for **Many Many Things** — an umbrella
-for our software, apps and video games (Sudo Games, coming soon) plus software & AI
-consultancy.
+A warm, cozy, tasteful-2000s studio landing site for **Many Many Things**: a portfolio
+studio for side projects (apps, games and tools).
 
 Built as a dependency-free **static site** (vanilla HTML/CSS/JS — no framework, no build
 step) and hosted on **GitHub Pages** at [manymanythings.co.uk](https://manymanythings.co.uk).
@@ -11,7 +10,7 @@ step) and hosted on **GitHub Pages** at [manymanythings.co.uk](https://manymanyt
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Single-page markup (hero, projects, consultancy, contact, footer) |
+| `index.html` | Single-page markup (hero, projects, advice, contact, footer) |
 | `styles.css` | Palette, type, paper-grain texture, animations, responsive layout |
 | `script.js` | Visitor counter, ribbon loop, copy-email, reveal-on-scroll, logo easter egg |
 | `favicon.svg` | Shape-cluster brand mark |

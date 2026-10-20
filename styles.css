@@ -439,19 +439,12 @@ section { position: relative; }
 .mp-logo .pip--tl { top: calc(var(--S) * 0.07); left: calc(var(--S) * 0.06); }
 .mp-logo .pip--br { bottom: calc(var(--S) * 0.07); right: calc(var(--S) * 0.06); transform: rotate(180deg); }
 
-/* ---- Consultancy ---- */
-.consult { padding: clamp(48px, 7vw, 92px) 0; background: var(--bg-2); border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); }
-.consult__lead { max-width: 56ch; font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.45; margin: 0 0 44px; }
-.consult__lead b { color: var(--primary); font-weight: 800; }
-.offers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-@media (max-width: 800px) { .offers { grid-template-columns: 1fr; } }
-.offer { background: var(--card); border: 2px solid var(--ink); border-radius: 16px; padding: 26px 24px; display: flex; flex-direction: column; gap: 12px; box-shadow: 4px 4px 0 color-mix(in oklab, var(--ink), transparent 88%); }
-.offer__no { font-family: var(--font-mono); font-size: 0.74rem; color: var(--primary); letter-spacing: 0.1em; }
-.offer__ico { width: 38px; height: 38px; display: grid; place-items: center; }
-.offer h3 { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; margin: 0; letter-spacing: -0.01em; }
-.offer p { margin: 0; color: var(--ink-soft); font-size: 0.98rem; line-height: 1.55; }
-.consult__foot { margin-top: 40px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
-.consult__foot p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+/* ---- Advice ---- */
+.advice { padding: clamp(48px, 7vw, 92px) 0; background: var(--bg-2); border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); }
+.advice__lead { max-width: 56ch; font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.45; margin: 0; }
+.advice__lead b { color: var(--primary); font-weight: 800; }
+.advice__foot { margin-top: 40px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.advice__foot p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
 
 /* ---- Contact ---- */
 .contact { padding: clamp(64px, 10vw, 128px) 0; text-align: center; }
