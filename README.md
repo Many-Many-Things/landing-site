@@ -1,6 +1,6 @@
 # Many Many Things — landing site
 
-A warm, cozy, tasteful-2000s studio landing site for **Many Many Things**: a portfolio
+A playful landing site for **Many Many Things**: a portfolio
 studio for side projects (apps, games and tools).
 
 Built as a dependency-free **static site** (vanilla HTML/CSS/JS — no framework, no build
@@ -12,12 +12,13 @@ step) and hosted on **GitHub Pages** at [manymanythings.co.uk](https://manymanyt
 | --- | --- |
 | `index.html` | Single-page markup (hero, projects, advice, contact, footer) |
 | `styles.css` | Palette, type, paper-grain texture, animations, responsive layout |
-| `script.js` | Visitor counter, ribbon loop, copy-email, reveal-on-scroll, logo easter egg |
-| `favicon.svg` | Shape-cluster brand mark |
+| `script.js` | Footer year, reveal-on-scroll |
+| `assets/` | Mascot cut-outs and project banners |
+| `favicon.png`, `apple-touch-icon.png` | Mascot app icon |
 | `CNAME` | Custom domain for GitHub Pages |
 
-Design settings baked into `<html>`: Terracotta & Teal palette · Gabarito display font ·
-paper grain on · animations on. All motion respects `prefers-reduced-motion`.
+Design: deep teal background, clay mascot, Fredoka display font, Outfit body font.
+All motion respects `prefers-reduced-motion`.
 
 ## Local preview
 

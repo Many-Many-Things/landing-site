@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB" data-palette="terracotta" data-font="gabarito" data-grain="on" data-motion="on">
+<html lang="en-GB">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,18 +9,14 @@
 <meta name="author" content="Many Many Things" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <link rel="canonical" href="https://manymanythings.co.uk/" />
-<meta name="theme-color" content="#E5542A" />
+<meta name="theme-color" content="#2F5468" />
 <meta name="geo.region" content="GB" />
 <meta name="geo.placename" content="United Kingdom" />
 
-<!-- favicon -->
-<link rel="icon" href="favicon.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" href="favicon.svg" />
-
-<!-- sitemap -->
+<link rel="icon" href="favicon.png" type="image/png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link rel="sitemap" type="application/xml" href="sitemap.xml" />
 
-<!-- social / open graph -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Many Many Things" />
 <meta property="og:locale" content="en_GB" />
@@ -39,10 +35,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 
-<!-- structured data: organization, website, apps -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,12 +47,12 @@
       "@id": "https://manymanythings.co.uk/#organization",
       "name": "Many Many Things",
       "url": "https://manymanythings.co.uk/",
-      "logo": "https://manymanythings.co.uk/favicon.svg",
+      "logo": "https://manymanythings.co.uk/apple-touch-icon.png",
       "image": "https://manymanythings.co.uk/og-image.png",
       "email": "contact@manymanythings.co.uk",
       "sameAs": ["https://github.com/Many-Many-Things"],
       "description": "Many Many Things is a small UK studio for side projects: apps, games and tools made with care.",
-      "slogan": "A little studio making many, many things.",
+      "slogan": "Tiny worlds, huge fun.",
       "foundingDate": "2026",
       "knowsAbout": ["Software development", "Mobile app development", "Game development", "Atlassian Forge"]
     },
@@ -101,216 +96,88 @@
 </head>
 <body>
 
-<!-- ░░ top ribbon ░░ -->
-<div class="ribbon" aria-hidden="true">
-  <div class="ribbon__track" id="ribbon">
-    <span>Many Many Things</span><span>Est. 2026</span><span>Making things with care</span><span>Apps &amp; games</span><span>Side projects</span>
-  </div>
-</div>
-
-<!-- ░░ header ░░ -->
-<header class="site-head">
-  <div class="site-head__inner">
-    <a class="brand" href="#top" aria-label="Many Many Things home">
-      <span class="mark" id="logoMark" title="many, many things">
-        <i class="sq"></i><i class="ci"></i><i class="di"></i>
-        <i class="ri"></i><i class="tr"></i><i class="sq"></i>
-        <i class="di"></i><i class="ci"></i><i class="sq"></i>
-      </span>
-      <span class="brand__name">Many <b>Many</b> Things</span>
-    </a>
-    <nav class="nav">
-      <a class="nav__link" href="#projects">Projects</a>
-      <a class="nav__link" href="#advice">Advice</a>
-      <a class="btn btn--sm btn--primary" href="mailto:contact@manymanythings.co.uk">Say hello</a>
-    </nav>
-  </div>
+<header class="site-head wrap">
+  <a class="logo" href="#top" aria-label="Many Many Things home">Many Many<br />Things</a>
+  <nav class="nav">
+    <a href="#things">Things</a>
+    <a href="#about">About</a>
+    <a href="#advice">Advice</a>
+  </nav>
 </header>
 
 <main id="top">
 
-  <!-- ░░ hero ░░ -->
-  <section class="hero">
-    <div class="wrap hero__inner">
-      <div class="hero__copy">
-        <span class="sticker">★ a small studio · est. 2026</span>
-        <h1>We make <em>many</em>, <span class="swap">many</span> things.</h1>
-        <p class="lead">Apps and games, made with intention and care, right down to the details.</p>
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="#projects">See what we're making →</a>
-          <a class="btn" href="#contact">Say hello</a>
-        </div>
-      </div>
-
-      <div class="hero__visual" aria-hidden="true">
-        <div class="playground" id="playground">
-          <div class="blob"></div>
-          <div class="thing" style="top:2%; left:30%; --r:-8deg; animation-delay:-0.2s"><span class="shape box"></span></div>
-          <div class="thing" style="top:14%; right:-2%; --r:10deg; animation-delay:-1.4s"><span class="shape dot"></span></div>
-          <div class="thing" style="bottom:8%; left:-4%; --r:-6deg; animation-delay:-2.1s"><span class="shape ring"></span></div>
-          <div class="thing" style="bottom:-2%; right:18%; --r:14deg; animation-delay:-0.9s"><span class="shape dia"></span></div>
-          <div class="thing" style="top:40%; left:-6%; --r:4deg; animation-delay:-3.0s"><span class="shape pill"></span></div>
-          <div class="thing" style="bottom:30%; right:-6%; --r:-12deg; animation-delay:-1.9s"><span class="shape plus"></span></div>
-          <div class="thing" style="top:46%; left:42%; --r:0deg; animation-delay:-2.6s"><span class="shape box" style="background:var(--accent)"></span></div>
-        </div>
-      </div>
+  <section class="hero wrap">
+    <div class="hero__copy">
+      <h1 class="display">We make many, many things</h1>
+      <p class="lead">Small apps and games, made with care. Everyone's welcome to play.</p>
+      <a class="btn btn--gold" href="#things">See what we've made</a>
     </div>
+    <img class="mascot hero__mascot" src="assets/mascot-wave.png" alt="" width="264" height="306" />
   </section>
 
-  <!-- ░░ projects ░░ -->
-  <section class="projects" id="projects">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="tag">// projects</span>
-        <h2>Things we're making</h2>
-      </div>
+  <section class="things wrap" id="things">
+    <h2 class="display reveal">Things we've made</h2>
+    <div class="cards">
+      <article class="card card--sage reveal" id="sudogames">
+        <svg class="card__art" viewBox="0 0 160 160" aria-hidden="true">
+          <path d="M80 150 140 120 80 90 20 120Z" fill="#000" opacity=".1"/>
+          <path d="M80 132 136 104 80 76 24 104Z" fill="#E86A6A" stroke="#1E2A30" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M24 104v12l56 28 56-28v-12L80 132Z" fill="#C94F55" stroke="#1E2A30" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M80 120 112 104 80 88 48 104Z" fill="#8BA38E" stroke="#1E2A30" stroke-width="3" stroke-linejoin="round"/>
+          <rect x="72" y="40" width="16" height="66" rx="3" fill="#6FA477" stroke="#1E2A30" stroke-width="3"/>
+          <rect x="70" y="36" width="20" height="10" rx="3" fill="#A88BB5" stroke="#1E2A30" stroke-width="3"/>
+          <circle cx="80" cy="22" r="17" fill="#EFC66A" stroke="#1E2A30" stroke-width="3"/>
+        </svg>
+        <h3>Sudo Games</h3>
+        <p>Board-game classics you can play anywhere. Chess, backgammon, Ludo and more, all offline.</p>
+        <a class="btn btn--white" href="https://apps.apple.com/us/app/sudo-games-play-anywhere/id6761497937" target="_blank" rel="noopener">Play on iOS</a>
+      </article>
 
-      <div class="grid">
-        <!-- feature: Sudo Games -->
-        <article class="card card--feature reveal" id="sudogames">
-          <div class="card__art sg-art">
-            <img src="assets/sudo-banner.png" alt="Sudo Games key art — the yellow Sudo Games mark and a cluster of board-game tiles (chess, connect four, dice, ludo, snakes &amp; ladders, backgammon) on a starry plum night sky" />
-          </div>
-          <div class="card__body">
-            <div class="sg-head">
-              <span class="sg-logo" aria-hidden="true">
-                <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M 814 215 Q 814 129 710 129 L 336 129 Q 210 129 210 259 Q 210 389 336 389 L 710 389 Q 814 389 814 495 Q 814 625 710 625 L 336 625 Q 210 625 210 755 Q 210 885 336 885" fill="none" stroke="#1B1430" stroke-width="172" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M 814 215 Q 814 129 710 129 L 336 129 Q 210 129 210 259 Q 210 389 336 389 L 710 389 Q 814 389 814 495 Q 814 625 710 625 L 336 625 Q 210 625 210 755 Q 210 885 336 885" fill="none" stroke="#E8C36A" stroke-width="132" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="548" cy="886" r="74" fill="#C77A7E" stroke="#1B1430" stroke-width="22"/>
-                  <ellipse cx="530" cy="864" rx="22" ry="11" fill="#FFFCF2" opacity="0.65"/>
-                </svg>
-              </span>
-              <h3>Sudo Games</h3>
-            </div>
-            <p>Our games app: a cosy collection of board-game classics, out now on iOS (Android coming soon). Chess, backgammon, Yacht dice, Ludo and more, each with loads of different opponents to play against, all offline.</p>
-            <div class="card__meta">
-              <span class="dot-led" style="background:var(--secondary);box-shadow:0 0 0 3px color-mix(in oklab,var(--secondary),transparent 70%)"></span>
-              <span class="pill pill--live">Live</span>
-              <span class="mono">ios · board games</span>
-            </div>
-            <a class="card__link" href="https://apps.apple.com/us/app/sudo-games-play-anywhere/id6761497937" target="_blank" rel="noopener">Get it on the App Store →</a>
-          </div>
-        </article>
-
-        <!-- half: app -->
-        <article class="card card--half reveal">
-          <div class="card__art">
-            <div class="ph">app preview</div>
-          </div>
-          <div class="card__body">
-            <h3>An app, brewing</h3>
-            <p>Something useful and friendly for everyday life. We'll say more when it's ready to meet people.</p>
-            <div class="card__meta">
-              <span class="pill pill--idea">In the works</span>
-              <span class="mono">app</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- half: MoonPoker (Atlassian Forge plugin) -->
-        <article class="card card--half reveal" id="moonpoker">
-          <div class="card__art mp-art">
-            <img src="assets/moonpoker-banner.png" alt="MoonPoker — planning poker running inside a Jira issue: vote cards and a revealed result under a crescent moon" />
-          </div>
-          <div class="card__body">
-            <div class="mp-head">
-              <span class="mp-logo" aria-hidden="true">
-                <span class="vcard"><i class="pip pip--tl"></i><i class="cres"></i><i class="pip pip--br"></i></span>
-              </span>
-              <h3>MoonPoker</h3>
-            </div>
-            <p>Planning poker, right inside a Jira issue. The team votes on story points, reveals together, and the estimate lands on the ticket. No new tools to learn, no separate meeting to book.</p>
-            <div class="card__meta">
-              <span class="dot-led" style="background:var(--secondary);box-shadow:0 0 0 3px color-mix(in oklab,var(--secondary),transparent 70%)"></span>
-              <span class="pill pill--live">Live</span>
-              <span class="mono">jira plugin · atlassian forge</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- third x3 -->
-        <article class="card card--third reveal">
-          <div class="card__art" style="aspect-ratio:1/1"><div class="ph">?</div></div>
-          <div class="card__body">
-            <h3>More to come</h3>
-            <p>We have many things planned.</p>
-            <div class="card__meta"><span class="pill pill--idea">Soon-ish</span></div>
-          </div>
-        </article>
-        <article class="card card--third reveal">
-          <div class="card__art" style="aspect-ratio:1/1"><div class="ph">?</div></div>
-          <div class="card__body">
-            <h3>And more</h3>
-            <p>Genuinely, quite a lot.</p>
-            <div class="card__meta"><span class="pill pill--idea">Soon-ish</span></div>
-          </div>
-        </article>
-        <article class="card card--third reveal">
-          <div class="card__art" style="aspect-ratio:1/1"><div class="ph">?</div></div>
-          <div class="card__body">
-            <h3>Your idea?</h3>
-            <p>Got an idea you want to see made? <a href="mailto:contact@manymanythings.co.uk" style="color:var(--primary);font-weight:700">Tell us →</a></p>
-            <div class="card__meta"><span class="mono">say hello</span></div>
-          </div>
-        </article>
-      </div>
+      <article class="card card--pink reveal" id="moonpoker">
+        <svg class="card__art" viewBox="0 0 160 160" aria-hidden="true">
+          <g transform="rotate(12 80 80)">
+            <rect x="42" y="22" width="84" height="120" rx="10" fill="#000" opacity=".12" transform="translate(6 6)"/>
+            <rect x="42" y="22" width="84" height="120" rx="10" fill="#EFC66A" stroke="#1E2A30" stroke-width="3"/>
+            <rect x="52" y="32" width="64" height="100" rx="5" fill="#2F5468" stroke="#1E2A30" stroke-width="3"/>
+            <path d="M94 62a24 24 0 1 0 6 36 20 20 0 1 1-6-36Z" fill="#EFC66A" stroke="#1E2A30" stroke-width="3" stroke-linejoin="round"/>
+            <circle cx="52" cy="32" r="6" fill="#EFC66A" stroke="#1E2A30" stroke-width="3"/>
+          </g>
+        </svg>
+        <h3>MoonPoker</h3>
+        <p>Planning poker inside a Jira issue. Vote, reveal together, and the estimate lands on the ticket.</p>
+        <span class="btn btn--white btn--static">Coming soon</span>
+      </article>
     </div>
+    <p class="note reveal">More things are brewing.</p>
   </section>
 
-  <!-- ░░ advice ░░ -->
-  <section class="advice" id="advice">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="tag" style="color:var(--primary)">// advice</span>
-        <h2>Free advice, if it helps</h2>
-      </div>
-      <p class="advice__lead reveal">We don't take on client work. But if you're building something, or finding your way in tech, we're happy to chat. <b>Especially if you're a woman, non-binary, or from an under-represented group</b> in the industry.</p>
-
-      <div class="advice__foot reveal">
-        <a class="btn btn--primary" href="mailto:contact@manymanythings.co.uk?subject=Advice">Ask a question →</a>
-        <p>No cost, no catch. A short email is plenty.</p>
-      </div>
+  <section class="about wrap" id="about">
+    <div class="about__copy reveal">
+      <h2 class="display">Who we are</h2>
+      <p class="lead">Many Many Things is a tiny London studio for side projects. We make playful apps and games for anyone curious enough to hit play, and we care about the craft right down to the details.</p>
+      <span class="pill">Based in London</span>
     </div>
+    <img class="mascot about__mascot reveal" src="assets/mascot-sit.png" alt="" width="290" height="214" loading="lazy" />
   </section>
 
-  <!-- ░░ contact ░░ -->
-  <section class="contact" id="contact">
-    <div class="wrap">
-      <span class="mono reveal" style="display:block">// say hello</span>
-      <h2 class="reveal">Say hello.</h2>
-      <p class="sub reveal">Feedback on our projects, a question, or just a friendly hello. We read every message.</p>
-      <div class="email-card reveal">
-        <a class="email" href="mailto:contact@manymanythings.co.uk">contact@manymanythings.co.uk</a>
-        <button class="btn btn--sm copy-btn" id="copyBtn" type="button">
-          <span class="copied-toast" id="toast">copied!</span>
-          Copy
-        </button>
-      </div>
+  <section class="advice wrap" id="advice">
+    <div class="advice__copy reveal">
+      <h2 class="display">Free advice, no strings attached</h2>
+      <p class="lead">Just starting out, or finding your way in tech? We'll happily talk shop, for free. Especially if you're a woman, non-binary, or from an under-represented group in the industry.</p>
+    </div>
+    <img class="mascot advice__mascot" src="assets/mascot-thumbsup.png" alt="" width="264" height="306" loading="lazy" />
+    <div class="hello reveal" id="contact">
+      <span class="hello__title">Say hello</span>
+      <a class="hello__email" href="mailto:contact@manymanythings.co.uk">contact@manymanythings.co.uk</a>
+      <a class="btn btn--pink" href="mailto:contact@manymanythings.co.uk?subject=Hello">Get in touch</a>
     </div>
   </section>
 </main>
 
-<!-- ░░ footer ░░ -->
-<footer class="site-foot">
-  <div class="site-foot__inner">
-    <div class="foot__left">
-      <span class="brand">
-        <span class="mark mark--xs"><i class="sq"></i><i class="ci"></i><i class="di"></i><i class="ri"></i><i class="tr"></i><i class="sq"></i><i class="di"></i><i class="ci"></i><i class="sq"></i></span>
-        <span class="brand__name">Many <b>Many</b> Things</span>
-      </span>
-      <p class="foot__tag">A little studio making many, many things.<br />© <span id="year">2026</span> Many Many Things. Made with care.</p>
-    </div>
-    <div class="foot__right">
-      <span class="counter">you are visitor no. <b id="visitorCount">00,001</b></span>
-      <div class="foot__links">
-        <a href="#projects">Projects</a>
-        <a href="#advice">Advice</a>
-        <a href="mailto:contact@manymanythings.co.uk">Email</a>
-        <a href="#top">↑ top</a>
-      </div>
-    </div>
-  </div>
+<footer class="site-foot wrap">
+  <p>Tiny worlds, huge fun.</p>
+  <p>© <span id="year">2026</span> Many Many Things</p>
 </footer>
 
 <script src="script.js"></script>
